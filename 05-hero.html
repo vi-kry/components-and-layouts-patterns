@@ -12,9 +12,21 @@
       rel="stylesheet"
     />
     <style>
+      * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+      }
+
       html {
         font-family: "Rubik", sans-serif;
         color: #444;
+      }
+
+      header {
+        background-color: orangered;
+        height: 100vh;
+        position: relative;
       }
 
       .container {
@@ -27,6 +39,18 @@
         font-weight: 700;
         display: flex;
         justify-content: space-between;
+        background-color: green;
+      }
+
+      .header-container {
+        width: 1200px;
+        position: absolute;
+        left: 50%;
+        top: 50%;
+
+        transform: translate(-50%, -50%);
+
+        background-color: violet;
       }
 
       h1 {
@@ -59,6 +83,7 @@
 
       section {
         padding: 96px 0;
+        background-color: #f7f7f7;
       }
     </style>
   </head>
@@ -69,7 +94,7 @@
         <div>NAVIGATION</div>
       </nav>
 
-      <div class="container">
+      <div class="header-container">
         <h1>A healthy meal delivered to your door, every single day</h1>
         <p>
           The smart 365-days-per-year food subscription that will make you eat
